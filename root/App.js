@@ -1,28 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
 import React, { Component } from 'react';
 import $ from 'jquery';
 import './App.css';
@@ -60,7 +35,7 @@ class App extends Component {
     return (
       <div>
         <textarea
-          placeholder='Insert your descripto items here, Separated by a comma (without [])'
+          placeholder='Insert your descriptor items here, Separated by a comma (without [])'
           onChange={e => {
             this.setState({ descriptorInput: e.target.value });
           }}
