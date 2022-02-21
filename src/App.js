@@ -18,7 +18,7 @@ class App extends Component {
     try {
       descriptorInputArray = $.parseJSON('[' + descriptorInput + ']');
     } catch {
-      alert('errorr');
+      alert('Pls insert valid descriptor item format');
     }
     const contentResult = descriptorInputArray.map((element, key) => (
       <div key={key}>
