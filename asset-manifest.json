@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/convert-descriptor-to-content-xml/static/css/main.0b590089.css",
+    "main.js": "/convert-descriptor-to-content-xml/static/js/main.bc946ca1.js",
+    "index.html": "/convert-descriptor-to-content-xml/index.html",
+    "main.0b590089.css.map": "/convert-descriptor-to-content-xml/static/css/main.0b590089.css.map",
+    "main.bc946ca1.js.map": "/convert-descriptor-to-content-xml/static/js/main.bc946ca1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b590089.css",
+    "static/js/main.bc946ca1.js"
+  ]
+}
