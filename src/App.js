@@ -14,17 +14,23 @@ class App extends Component {
 
   convert() {
     const { descriptorInput } = this.state;
-    const descriptorInputArray = $.parseJSON('[' + descriptorInput + ']');
-    const contentResult = descriptorInputArray.map(element => (
-      <div>
-        {'content.' + element.itemId + '.Text="' + element.defaultValue + '"'}
+    let descriptorInputArray;
+    try {
+      descriptorInputArray = $.parseJSON('[' + descriptorInput + ']');
+    } catch {
+      alert('errorr');
+    }
+    const contentResult = descriptorInputArray.map((element, key) => (
+      <div key={key}>
+        {element.actionId ? 'outcomes.' + element.actionId + '.' + element.actionType + '="' + element.defaultValue + '"':
+        'content.' + element.itemId + '.Text="' + element.defaultValue + '"'}
       </div>
     ));
     const contentResultForCopy = descriptorInputArray.map(
       element =>
         'content.' + element.itemId + '.Text="' + element.defaultValue + '"'
     );
-    this.setState({ contentResult, contentResultForCopy });
+    this.setState({ contentResult, contentResultForCopy: contentResultForCopy.join('\n') });
   }
 
   copyResult() {
@@ -35,14 +41,14 @@ class App extends Component {
     return (
       <div>
         <textarea
-          placeholder='Insert your descriptor items here, Separated by a comma (without [])'
+          placeholder='Insert your outcomes/content descriptor items here, Separated by a comma (without [])'
           onChange={e => {
             this.setState({ descriptorInput: e.target.value });
           }}
         />
         <button onClick={() => this.convert()}>Convert</button>
         <h1>Result:</h1>
-        <button onClick={() => this.copyResult()}>Copy Result</button>
+        <button class="copy-btn" onClick={() => this.copyResult()}>Copy Result</button>
         <div className='result-block'>{this.state.contentResult}</div>
       </div>
     );

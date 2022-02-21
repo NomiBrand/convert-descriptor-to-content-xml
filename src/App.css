@@ -23,6 +23,20 @@ button {
   margin: auto;
   font-size: 20px;
   margin-top: 5px;
+  cursor: pointer;
+  border: 2px solid #fcbe24;
+}
+button:hover{
+  background-color: transparent;
+  color: #fcbe24;
+}
+.copy-btn{
+  background-color: transparent;
+  color: #fcbe24;
+}
+.copy-btn:hover{
+  background-color: #fcbe24;
+  color:black;
 }
 h1 {
   margin: 0;
