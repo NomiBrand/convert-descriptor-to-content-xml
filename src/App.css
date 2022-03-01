@@ -33,6 +33,9 @@ button:hover, .copy-btn{
 .copy-btn{
   margin-bottom: 8px;
 }
+.copy-btn:hover{
+  background-color: #fcbe24;
+}
 h1 {
   margin: 0;
 }
