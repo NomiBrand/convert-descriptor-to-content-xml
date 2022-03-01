@@ -38,10 +38,28 @@ class App extends Component {
   }
 
   render() {
+    const example = `
+    {
+      "itemId": "x",
+      "groupId": "xxx",
+      "displayName": "xxx xxx",
+      "defaultValue": "xxx xxx xxx",
+      "description": "xxx xxx"
+    },
+    {
+      "actionId": "x",
+      "actionType": "xx",
+      "defaultValue": "xxx xxx xxx",
+      "description": "xxx xxx",
+      "displayName": "xxx xxx",
+      "groupId": "xxx"
+    }`
     return (
       <div>
+        <h1>Covert From descriptor to content.xml</h1>
+        <h3>Insert your outcomes/content descriptor items here, Separated by a comma:</h3>
         <textarea
-          placeholder='Insert your outcomes/content descriptor items here, Separated by a comma (without [])'
+          placeholder={example}
           onChange={e => {
             this.setState({ descriptorInput: e.target.value });
           }}

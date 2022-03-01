@@ -26,13 +26,12 @@ button {
   cursor: pointer;
   border: 2px solid #fcbe24;
 }
-button:hover{
+button:hover, .copy-btn{
   background-color: transparent;
   color: #fcbe24;
 }
 .copy-btn{
-  background-color: transparent;
-  color: #fcbe24;
+  margin-bottom: 8px;
 }
 .copy-btn:hover{
   background-color: #fcbe24;
