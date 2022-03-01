@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/convert-descriptor-to-content-xml/static/css/main.0b590089.css",
-    "main.js": "/convert-descriptor-to-content-xml/static/js/main.ad9673d9.js",
+    "main.css": "/convert-descriptor-to-content-xml/static/css/main.ef984ddf.css",
+    "main.js": "/convert-descriptor-to-content-xml/static/js/main.29345354.js",
     "index.html": "/convert-descriptor-to-content-xml/index.html",
-    "main.0b590089.css.map": "/convert-descriptor-to-content-xml/static/css/main.0b590089.css.map",
-    "main.ad9673d9.js.map": "/convert-descriptor-to-content-xml/static/js/main.ad9673d9.js.map"
+    "main.ef984ddf.css.map": "/convert-descriptor-to-content-xml/static/css/main.ef984ddf.css.map",
+    "main.29345354.js.map": "/convert-descriptor-to-content-xml/static/js/main.29345354.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b590089.css",
-    "static/js/main.ad9673d9.js"
+    "static/css/main.ef984ddf.css",
+    "static/js/main.29345354.js"
   ]
 }
